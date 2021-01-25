@@ -8,20 +8,20 @@ $headers-font: "Nunito", "Helvetica", "sans-serif";
 
 @font-face {
   font-family: "GT America";
-  src: font-url('GT America Regular.eot');
-  src: font-url('GT America Regular.eot?#iefix') format('embedded-opentype'),
-       font-url('GT America Regular.woff2') format('woff2'),
-       font-url('GT America Regular.woff') format('woff'),
-       font-url('GT America Regular.ttf') format('truetype')
+  src: url('GT America Regular.eot');
+  src: url('GT America Regular.eot?#iefix') format('embedded-opentype'),
+       url('GT America Regular.woff2') format('woff2'),
+       url('GT America Regular.woff') format('woff'),
+       url('GT America Regular.ttf') format('truetype')
 }
 
 @font-face {
   font-family: "GT America";
-  src: font-url('GT America Bold.eot');
-  src: font-url('GT America Bold.eot?#iefix') format('embedded-opentype'),
-       font-url('GT America Bold.woff2') format('woff2'),
-       font-url('GT America Bold.woff') format('woff'),
-       font-url('GT America Bold.ttf') format('truetype')
+  src: url('app/assets/fonts/GT America Bold.eot');
+  src: url('app/assets/fonts/GT America Bold.eot?#iefix') format('embedded-opentype'),
+       url('app/assets/fonts/GT America Bold.woff2') format('woff2'),
+       url('app/assets/fonts/GT America Bold.woff') format('woff'),
+       url('app/assets/fonts/GT America Bold.ttf') format('truetype')
 }
 
-$my-font: "GT Americana";
+$my-font: "GT America";

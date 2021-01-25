@@ -1,1 +1,23 @@
 // Specific CSS for your home-page
+h1 {
+  font-family: $my-font;
+  font-weight: bold;
+  font-size: 80px;
+  color: $gray;
+  padding: 48px;
+}
+
+p {
+  font-family: $my-font;
+  font-weight: bold;
+  color: white;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $black;
+}
