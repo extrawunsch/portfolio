@@ -5,12 +5,23 @@
 $body-font: "Work Sans", "Helvetica", "sans-serif";
 $headers-font: "Nunito", "Helvetica", "sans-serif";
 
-// To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+
+@font-face {
+  font-family: "GT America";
+  src: font-url('GT America Regular.eot');
+  src: font-url('GT America Regular.eot?#iefix') format('embedded-opentype'),
+       font-url('GT America Regular.woff2') format('woff2'),
+       font-url('GT America Regular.woff') format('woff'),
+       font-url('GT America Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "GT America";
+  src: font-url('GT America Bold.eot');
+  src: font-url('GT America Bold.eot?#iefix') format('embedded-opentype'),
+       font-url('GT America Bold.woff2') format('woff2'),
+       font-url('GT America Bold.woff') format('woff'),
+       font-url('GT America Bold.ttf') format('truetype')
+}
+
+$my-font: "GT Americana";
