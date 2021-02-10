@@ -1,4 +1,4 @@
-$animation_speed: 20s;
+$animation_speed: 30s;
 
 .marquee {
   margin: 8px 0px;
@@ -16,11 +16,17 @@ $animation_speed: 20s;
 .marquee__inner span {
   font-size: 16px;
   font-weight: lighter;
-  color: black;
+  color: white;
   position: relative;
   right: 100%; /* responsible for Animation direction */
   padding: 0px 24px;
   animation: marquee $animation_speed linear infinite;
+  
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  text-rendering: optimizeLegibility;
 }
 
 .delayed span {
