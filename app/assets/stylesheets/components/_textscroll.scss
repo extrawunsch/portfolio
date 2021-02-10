@@ -1,41 +1,25 @@
-.textscroll {
+.textcontainer {
   margin: 8px 64px;
   overflow: hidden;
+}
+.textscroll {
   white-space: nowrap;
+  display: inline-block;
 } 
 
 .textscroll span {
-  display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   position: relative;
   left: 100%;
-  animation: textscroll 10s linear infinite;
+  padding: 0px 24px;
+  animation: textscroll 14s linear infinite;
 }
 
-.textscroll span:nth-child(1) {
-  animation-delay: 0s;
+.delayed span {
+  animation-delay: 7s;
 }
 
-.textscroll span:nth-child(2) {
-  animation-delay: 0.2s;
-}
-
-.textscroll span:nth-child(3) {
-  animation-delay: 0.4s;
-}
-
-.textscroll span:nth-child(4) {
-  animation-delay: 0.6s;
-}
-
-.textscroll span:nth-child(5) {
-  animation-delay: 0.8s;
-}
-
-.textscroll span:nth-child(6) {
-  animation-delay: 1.0s;
-}
 
 
 @keyframes textscroll {
@@ -46,44 +30,20 @@
 
 // ADAPTIVENESS OVER SCREENS
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1144px) {
   .textscroll span {
-    animation: textscroll 10s linear  infinite;
+    font-size: 17px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .textscroll span {
-    animation: textscroll 9s linear infinite;
-  }
-
-  .textscroll span:nth-child(1) {
-    animation-delay: 0s;
-  }
-  
-  .textscroll span:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-  
-  .textscroll span:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-  
-  .textscroll span:nth-child(4) {
-    animation-delay: 0.3s;
-  }
-  
-  .textscroll span:nth-child(5) {
-    animation-delay: 0.4s;
-  }
-  
-  .textscroll span:nth-child(6) {
-    animation-delay: 0.5s;
+    font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .textscroll span {
-    animation: textscroll 6.4s linear infinite;
+    font-size: 12px;
   }
 }
