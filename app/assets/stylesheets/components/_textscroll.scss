@@ -1,29 +1,32 @@
-.textwrap {
-  margin: 8px 64px;
+.marquee {
+  margin: 8px 0px;
   overflow: hidden;
 }
 
-.textscroll {
+
+.marquee__inner {
   white-space: nowrap;
   display: inline-block;
+  position: fixed;
 } 
 
-.textscroll span {
+.marquee__inner span {
   font-size: 18px;
+  font-family: "GT America";
   color: black;
   position: relative;
   right: 100%; /* responsible for Animation direction */
   padding: 0px 24px;
-  animation: textscroll 14s linear infinite;
+  animation: marquee 18s linear infinite;
 }
 
 .delayed span {
-  animation-delay: 7s;
+  animation-delay: 9s;
 }
 
 
 
-@keyframes textscroll {
+@keyframes marquee {
   0% { right: 100%; }
   80% { opacity: 100%; }
   100% { right: -100%; opacity: 0%; }
@@ -32,19 +35,19 @@
 // ADAPTIVENESS OVER SCREENS
 
 @media only screen and (max-width: 1144px) {
-  .textscroll span {
+  .marquee__inner span {
     font-size: 17px;
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .textscroll span {
+  .marquee__inner span {
     font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .textscroll span {
+  .marquee__inner span {
     font-size: 12px;
   }
 }
