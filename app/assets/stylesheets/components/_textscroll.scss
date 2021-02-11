@@ -1,11 +1,15 @@
 $animation_speed: 34s;
 
 .marquee {
-  margin: 8px 0px;
+  margin: 16px 0px;
   overflow: hidden;
   font-family: 'Roboto';
+  transition: 0.3s ease-in;
 }
 
+.hide {
+  opacity: 0;
+}
 
 .marquee__inner {
   white-space: nowrap;

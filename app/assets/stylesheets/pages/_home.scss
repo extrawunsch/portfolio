@@ -13,7 +13,7 @@ p {
   color: white;
 }
 
-.background {
+.index__banner {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,12 +22,13 @@ p {
   background-color: $black;
 }
 
-.search_icon {
+.search__icon {
   background-image: asset-url('search_icon.png');
   background-size: cover;
   width: 400px;
   height: 400px;
   position: absolute;
   bottom: -100px;
-  right: -40px;
+  right: -50px;
+  overflow: hidden;
 }
