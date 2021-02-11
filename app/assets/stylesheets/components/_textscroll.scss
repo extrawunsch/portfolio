@@ -4,6 +4,16 @@ $animation_speed: 34s;
   margin: 8px 0px;
   overflow: hidden;
   font-family: 'Roboto';
+  
+  .show {
+    opacity: 1;
+    left: 0;
+  }
+
+  .hide {
+    opacity: 0;
+    left: -100;
+  }
 }
 
 

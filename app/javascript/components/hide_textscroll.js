@@ -1,0 +1,1 @@
+const textscroll = document.getElementById("marquee__container")
