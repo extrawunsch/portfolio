@@ -1,11 +1,11 @@
 const initScrollFunc = () => {
-  const windowHeight = window.scrollY;
   const textscroll = document.getElementById("marquee__container")
+  console.log(textscroll);
   window.addEventListener("scroll", () => {
-    if (windowHeight <= 30) {
-      textscroll.classList.add('show');
+    if ( window.scrollY >= 40) {
+      textscroll.classList.add('hide');
     } else {
-      textscroll.classList.remove('show');
+      textscroll.classList.remove('hide');
     }
   });
 };
