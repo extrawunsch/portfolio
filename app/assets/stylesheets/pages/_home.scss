@@ -13,7 +13,7 @@ p {
   color: white;
 }
 
-.background {
+.index_banner {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,5 +29,6 @@ p {
   height: 400px;
   position: absolute;
   bottom: -100px;
-  right: -40px;
+  right: -50px;
+  overflow: hidden;
 }
